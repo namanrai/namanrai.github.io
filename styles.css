@@ -10,7 +10,7 @@
     --bgcolor: #26282B;
     --white: #ffffff;
   }
-
+/*general*/
 body{
     margin: 0;
     padding: 0;
@@ -18,6 +18,7 @@ body{
     background-color: var(--bgcolor);
 }
 
+/*navbar*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -115,9 +116,9 @@ body{
 /*landing page*/
  
 .landpg {
-    background: blue;
+    background: var(--bgcolor);
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,19 +127,165 @@ body{
     position: relative;
 }
 
-.title1{
-    background: yellow;
-    width: 200px;
-    height: 200px;
+
+#title1{
+   transform: scale(55%);
+   animation: fill 0.5s ease forwards 5s;
 }
 
+
+/*title animation*/
+#title1 path:nth-child(1){
+    stroke-dasharray: 256.8px;
+    stroke-dashoffset: 256.8px;
+    animation: line-anim 2s ease forwards;
+   
+}
+
+#title1 path:nth-child(2){
+    stroke-dasharray: 142px;
+    stroke-dashoffset: 142px;
+    animation: line-anim 2s ease forwards 0.2s;
+}
+
+#title1 path:nth-child(3){
+    stroke-dasharray: 59.7px;
+    stroke-dashoffset: 59.7px;
+    animation: line-anim 2s ease forwards 0.4s;
+}
+
+#title1 path:nth-child(4){
+    stroke-dasharray: 312.8px;
+    stroke-dashoffset: 312.8px;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+
+#title1 path:nth-child(5){
+    stroke-dasharray: 212px;
+    stroke-dashoffset: 212px;
+    animation: line-anim 2s ease forwards 0.8s;
+}
+
+#title1 path:nth-child(6){
+    stroke-dasharray: 205.1px;
+    stroke-dashoffset: 205.1px;
+    animation: line-anim 2s ease forwards 1s;
+}
+
+#title1 path:nth-child(7){
+    stroke-dasharray: 214.8px;
+    stroke-dashoffset: 214.8px;
+    animation: line-anim 2s ease forwards ;
+}
+
+#title1 path:nth-child(8){
+    stroke-dasharray: 312.8px;
+    stroke-dashoffset: 312.8px;
+    animation: line-anim 2s ease forwards ;
+}
+
+#title1 path:nth-child(9){
+    stroke-dasharray: 214.8px;
+    stroke-dashoffset: 214.8px;
+    animation: line-anim 2s ease forwards 1.6s;
+}
+
+#title1 path:nth-child(10){
+    stroke-dasharray: 142px;
+    stroke-dashoffset: 142px;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+
+#title1 path:nth-child(11){
+    stroke-dasharray: 198.6px;
+    stroke-dashoffset: 198.6px;
+    animation: line-anim 2s ease forwards 2s;
+}
+
+#title1 path:nth-child(12){
+    stroke-dasharray: 273.7px;
+    stroke-dashoffset: 273.7px;
+    animation: line-anim 2s ease forwards 2.2s;
+}
+
+#title1 path:nth-child(13){
+    stroke-dasharray: 214.8px;
+    stroke-dashoffset: 214.8px;
+    animation: line-anim 2s ease forwards 2.4s;
+}
+
+#title1 path:nth-child(14){
+    stroke-dasharray: 312.8px;
+    stroke-dashoffset: 312.8px;
+    animation: line-anim 2s ease forwards 2.6s;
+}
+
+#title1 path:nth-child(15){
+    stroke-dasharray: 214.8px;
+    stroke-dashoffset: 214.8px;
+    animation: line-anim 2s ease forwards 2.8s;
+}
+
+#title1 path:nth-child(16){
+    stroke-dasharray: 205.1px;
+    stroke-dashoffset: 205.1px;
+    animation: line-anim 2s ease forwards 3s;
+
+}
+
+#title1 path:nth-child(17){
+    stroke-dasharray: 248px;
+    stroke-dashoffset: 248px;
+    animation: line-anim 2s ease forwards 3.2s;
+
+}
+
+#title1 path:nth-child(18){
+    stroke-dasharray: 214.8px;
+    stroke-dashoffset: 214.8px;
+    animation: line-anim 2s ease forwards 3.4s;
+
+}
+
+#title1 path:nth-child(19){
+    stroke-dasharray: 142px;
+    stroke-dashoffset: 142px;
+    animation: line-anim 2s ease forwards 3.6s;
+
+}
+
+#title1 path:nth-child(20){
+    stroke-dasharray: 42.8px;
+    stroke-dashoffset: 42.8px;
+    animation: line-anim 2s ease forwards 3.8s;
+
+}
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: white;
+    }
+}
+
+
+
+/*side-stuff*/
 .right-stuff{
     width: 50px;
     height: 200px;
     bottom: 0px;
     left: auto;
     right: 10px;
-    background-color: red;
+    border: red solid 2px;
     z-index: 10;
     position: fixed;
 }
@@ -149,7 +296,7 @@ body{
     bottom: 0px;
     right: auto;
     left: 10px;
-    background-color: red;
+    border: red solid 2px;
     z-index: 10;
     position: fixed;
 }
