@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+
+/*color values*/
+:root {
+    --hover: #64FFDA;
+    --primary: #5F85DB;
+    --secondary: #90B8F8;
+    --bgcolor: #26282B;
+    --white: #ffffff;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bgcolor);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bgcolor);
+    color: var(--white);
+}
+
+.main-logo{
+    font-size: 2.25rem;
+    margin: 0.8rem;
+    font-style: normal ;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: var(--white);
+    padding: 1.8rem;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.navbar-links li a:hover{
+    color: var(--hover);
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.85rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+/*responsive navbar*/
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .navbar-links li{
+        text-align: center;
+
+    }
+
+    .navbar-links li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+    
+
+}
+
+/*landing page*/
+ 
+.landpg {
+    background: blue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+}
+
+.title1{
+    background: yellow;
+    width: 200px;
+    height: 200px;
+}
+
+.right-stuff{
+    width: 50px;
+    height: 200px;
+    bottom: 0px;
+    left: auto;
+    right: 10px;
+    background-color: red;
+    z-index: 10;
+    position: fixed;
+}
+
+.left-stuff{
+    width: 50px;
+    height: 200px;
+    bottom: 0px;
+    right: auto;
+    left: 10px;
+    background-color: red;
+    z-index: 10;
+    position: fixed;
+}
