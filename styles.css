@@ -315,6 +315,24 @@ body{
         height: 5vh;
         width: 20vw;
     }
+
+    .landpg {
+        height: 65vh;
+    }
+
+    #title1{
+        transform: scale(70%);
+        
+     }
+     
+     .title2 {
+        color: var(--primary);
+        font-size: 3.5vw;
+        font-style: bold;
+        font-weight: 700;
+        margin-top: 10px;
+       
+    }
 }
 
 /*side-stuff*/
