@@ -276,7 +276,46 @@ body{
     }
 }
 
+.title2 {
+    color: var(--primary);
+    font-size: 2.8vw;
+    font-style: bold;
+    font-weight: 700;
+    margin-top:-10px;
 
+
+}
+
+.button-land{
+    padding: 10px;
+    display: flex;
+}
+
+.btn1{
+    border: var(--secondary) solid 1px;
+    border-radius: 5px;
+    font-size: 2.5vh;
+    background-color: transparent;
+    color: var(--secondary);
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    padding:10px;
+    margin: 5px;
+    display: block;
+    width: 14vw;
+    height: 8vh;
+    margin: 5vh;
+}
+
+@media (max-width: 600px) {
+    .btn1{
+        font-size: 0.6rem;
+        margin: 10px;
+        height: 5vh;
+        width: 20vw;
+    }
+}
 
 /*side-stuff*/
 .right-stuff{
