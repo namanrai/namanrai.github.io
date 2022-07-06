@@ -598,7 +598,13 @@ body{
     padding: 10px;
 }
 
+.link-icons path:hover{
+    fill: var(--hover)
+}
 
+.link-icons-alt path:hover{
+    stroke: var(--hover)
+}
 
 .links-right {
     display: flex;
@@ -635,8 +641,10 @@ body{
 
 
 
+
+
 @media (max-width: 600px) {
-  .link-icons,.links-right a{
+  .link-icons,.link-icons-alt,.links-right a{
     transform: scale(70%);
 }
 }
@@ -658,14 +666,14 @@ body{
 .about-section{
     margin-left: 12%;
     margin-right: 12%;
-    margin-top: 30px;
+    margin-top: 40px;
     width: 80vw;
     height: 40vh;
     font-weight: 700;
     color: var(--white);
     display: flex;
     align-items: center;
-    font-size: 1vw;
+    font-size: 0.7vw;
     justify-content: space-between;
 }
 
