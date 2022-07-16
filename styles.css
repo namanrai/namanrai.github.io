@@ -330,7 +330,10 @@ body{
     animation-delay: 6.5s;
 }
 
-
+.btn1:hover{
+    background-color: rgba(100, 255, 218, 0.11);
+    transform: translateY(-3px);
+}
 
 
 @media (max-width: 600px) {
@@ -598,6 +601,10 @@ body{
     padding: 10px;
 }
 
+.list-items a:hover{
+    transform: translateY(-4px);
+}
+
 .link-icons path:hover{
     fill: var(--hover)
 }
@@ -633,6 +640,11 @@ body{
 
 .links-right a:hover{
     color: var(--hover);
+   
+}
+
+.links-right:hover{
+    transform: translateY(-4px);
 }
 
 .link-icons {
@@ -673,9 +685,31 @@ body{
     color: var(--white);
     display: flex;
     align-items: center;
-    font-size: 0.7vw;
+    font-size: 0.8vw;
     justify-content: space-between;
 }
+
+
+@media (max-width: 600px) {
+   .about-section{
+    flex-direction: column;
+   }
+   
+   .about-illustration{
+    transform: scale(80%);
+   }
+
+   .head1{
+    font-size: 5vw;
+    margin-left: 22%;
+   }
+
+   .about-section{
+    font-size: 1.5vw;
+  
+   }
+   
+  }
 
 .about-text{
     width: 40vw;
@@ -684,6 +718,6 @@ body{
 }
 
 .illus-svg{
-    transform: scale(85%);
+    transform: scale(80%);
 }
 
