@@ -721,3 +721,46 @@ body{
     transform: scale(80%);
 }
 
+.head2{
+    color: var(--white);
+    font-size: 3.5vw;
+    font-style: bold;
+    font-weight: 700;
+    margin-top: 120px;
+    margin-left: 12%;
+    margin-right: auto;
+}
+
+.parent-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    } 
+
+.skills-section{
+        margin-left: 12%;
+        margin-right: 12%;
+        margin-top: 40px;
+        width: 80vw;
+        height: 40vh;
+    }
+    
+
+.item{
+    width: 10vw;
+    height:20vh;
+    background-color: none;
+    border: var(--secondary) solid 1.5px;
+    border-radius: 9px;
+
+}
+
+@media (max-width: 600px){
+    .item{
+        width: 13vw;
+        height:10vh;
+    }
+}
