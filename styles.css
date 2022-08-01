@@ -807,7 +807,7 @@ li {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 100px ;
+    gap: 120px ;
     row-gap: 50px;
 }
 
@@ -833,8 +833,8 @@ li {
     
 
 .item{
-    width: 10vw;
-    height:20vh;
+    width: 130px;
+    height:130px;
     background-color: none;
     border: var(--secondary) solid 1.5px;
     border-radius: 9px;
@@ -853,8 +853,8 @@ li {
 
 @media (max-width: 600px){
     .item{
-        width: 20vw;
-        height:11vh;
+        width: 80px;
+        height:80px;
     }
 }
 
@@ -876,7 +876,7 @@ li {
 
 /*PROJECTS SECTION */
 
-.project-section-1{
+.project-section-1,.project-section-2{
     margin-left: 12%;
     margin-right: 12%;
     margin-top: 40px;
@@ -893,7 +893,7 @@ li {
 
 
 @media (max-width: 600px){
-    .project-section-1{
+    .project-section-1,.project-section-2{
         flex-direction: column;
     }
 
@@ -909,6 +909,17 @@ li {
     height: 380px;
 }
 
+
+@media (max-width: 600px){
+    .project-illustration{
+        width: 200px;
+        height: 200px;
+    }
+
+    .vl {
+        display: none;
+      }
+}
 
 .vl {
     border-left: 1.5px solid var(--secondary);
@@ -930,7 +941,44 @@ li {
     text-align: left;
 }
 
+@media (max-width: 600px){
+    .project-head{
+        font-size: 1rem;
+    }
 
+    .project-info{
+        width: 80%;
+        height: 40%;
+    }
+
+    .project-section-1,.project-section-2{
+        gap: 20px;
+    }
+
+    .project-social-links{
+        width: 20px;
+        height: 20px;
+    }
+
+    .info-list{
+        font-size: 0.8rem;
+        margin-left: -15px;
+    }
+
+
+}
+
+
+@media (min-width: 600px){
+
+
+    .project-section-2{
+        flex-direction: row-reverse;
+    }
+
+
+
+}
 
 .project-link{
     padding-top: 5px;
@@ -947,17 +995,29 @@ li {
     transform: translateY(-1px);
 }
 
-.reverse-flex{
-    flex-direction: row-reverse;
-    
-}
 
 
 .project-illustration-2{
-    width: 438px;
-    height: 292.99px;
+    width: 515px;
+    height: 320px;
 }
 
-.project-section-1{
+
+@media (max-width: 600px){
+    .project-illustration-2{
+        width: 280px;
+        height: 180px;
+    }
+
+    .head2{
+        margin-top: 300px;
+    }
+    
+
+}
+
+
+.project-section-1,.project-section-2{
     margin-bottom: 100px;
 }
+
