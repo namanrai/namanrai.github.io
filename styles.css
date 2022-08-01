@@ -344,6 +344,7 @@ body{
         margin: 10px;
         height: 5vh;
         width: 20vw;
+       
     }
 
     .landpg {
@@ -351,13 +352,13 @@ body{
     }
 
     #title1{
-        transform: scale(70%);
+        transform: scale(80%);
         
      }
      
      .title2 {
         color: var(--primary);
-        font-size: 3.5vw;
+        font-size: 3.8vw;
         font-style: bold;
         font-weight: 700;
         margin-top: 10px;
@@ -582,6 +583,20 @@ body{
     z-index: 10;
     position: fixed;
 }
+
+@media (max-width: 600px) {
+    .left-stuff{
+        left: -20px;
+        bottom: -10px;
+        transform: scale(75%);
+    }
+
+    .right-stuff{
+        bottom: 0px;
+        right: 0px;
+        transform: scale(85%);
+    }
+  }
 
 .links-left {
     display: flex;
@@ -834,8 +849,8 @@ li {
 
 @media (max-width: 600px){
     .item{
-        width: 21vw;
-        height:16vh;
+        width: 20vw;
+        height:11vh;
     }
 }
 
@@ -843,7 +858,13 @@ li {
 .logo-skills{
     padding: 10px;
     margin: 25px;
-    width: 75px;
-    height: 75px;
+    width: 60%;
+    height: 60%;
 }
 
+@media (max-width: 600px){
+    .logo-skills{
+        margin: 18px;
+    }
+
+}
