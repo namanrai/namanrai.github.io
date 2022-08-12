@@ -1059,13 +1059,32 @@ li {
     text-align: left;
 }
 
-.info-list{
+.exp-info-list{
     margin-left: -25px;
     padding-top: 15px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #D3D3D3;
+    text-align: left;
 }
+
 
 .exp-subhead{
     font-style: normal;
     color: #929292;
     font-size: 0.6rem;
+}
+
+
+@media (max-width: 600px){
+    .exp-head{
+        font-size: 0.8rem;
+    }
+
+    .exp-info-list{
+        font-size: 0.6rem;
+
+    }
+    
+
 }
