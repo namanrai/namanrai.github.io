@@ -15,6 +15,7 @@
 </head>
 <body>
     <!--Landing page-->
+
     <nav class ="navbar">
         <div class = "main-logo">NR.</div>
         <a href = "#" class ="toggle-button">
@@ -24,15 +25,16 @@
         </a>
         <div class = "navbar-links">
             <ul>
-                <li><a href = "#">About</a></li>
-                <li><a href = "#">Skills</a></li>
-                <li><a href = "#">Projects</a></li>
-                <li><a href = "#">Experience</a></li>
-                <li><a href = "#">Contact</a></li>
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#skill">Skills</a></li>
+                <li><a href = "#project">Projects</a></li>
+                <li><a href = "#exp">Experience</a></li>
+                <li><a href = "#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <div class="landpg">
+
+    <div class="landpg" id="land">
         
         <svg id  = "title1" viewBox="0 0 969 77" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M43.9119 8.89527V57H32.1941V37.1962H13.9664V57H2.24854V8.89527H13.9664V27.7397H32.1941V8.89527H43.9119Z" stroke="white" stroke-width="3"/>
@@ -60,15 +62,15 @@
         <div class=" title2" placeholder="in-down">Front-end Developer + Designer</div>
         
         <div class="button-land">
-            <button class="btn1">See my work!</button>
-            <button class="btn1">Contact Me!</button>
+            <a href = "#project"><button class="btn1">See my work!</button></a>
+            <a href = "#contact"><button class="btn1">Contact Me!</button></a>
         </div>
         
 
         <div class = "left-stuff">
             <ul class="links-left">
                 <li class="list-items">
-                    <a>
+                    <a href="#" target="_blank">
                         <svg  class= "link-icons-alt" viewBox="0 0 44 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M29.4165 13.75C32.5328 13.75 35.5215 14.9879 37.725 17.1915C39.9286 19.395 41.1665 22.3837 41.1665 25.5V39.2083H33.3332V25.5C33.3332 24.4612 32.9205 23.465 32.186 22.7305C31.4515 21.996 30.4553 21.5833 29.4165 21.5833C28.3777 21.5833 27.3815 21.996 26.647 22.7305C25.9125 23.465 25.4998 24.4612 25.4998 25.5V39.2083H17.6665V25.5C17.6665 22.3837 18.9044 19.395 21.108 17.1915C23.3116 14.9879 26.3002 13.75 29.4165 13.75V13.75Z" stroke="#90B8F8" stroke-width="3.91667" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M9.83333 15.7083H2V39.2083H9.83333V15.7083Z" stroke="#90B8F8" stroke-width="3.91667" stroke-linecap="round" stroke-linejoin="round"/>
@@ -79,7 +81,7 @@
                     </a>
                 </li>
                 <li class="list-items">
-                    <a>
+                    <a href="https://www.instagram.com/namanrai_306" target="_blank">
                         <svg class= "link-icons links-2" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M24.0127 10.4688C16.5782 10.4688 10.4688 16.5701 10.4688 24.0127V42.9873C10.4688 50.4218 16.5701 56.5312 24.0127 56.5312H42.9873C50.4218 56.5312 56.5312 50.4299 56.5312 42.9873V24.0127C56.5312 16.5782 50.4299 10.4688 42.9873 10.4688H24.0127ZM24.0127 14.6562H42.9873C48.1644 14.6562 52.3438 18.8356 52.3438 24.0127V42.9873C52.3438 48.1644 48.1644 52.3438 42.9873 52.3438H24.0127C18.8356 52.3438 14.6562 48.1644 14.6562 42.9873V24.0127C14.6562 18.8356 18.8356 14.6562 24.0127 14.6562ZM45.8662 19.2363C44.8112 19.2363 43.9688 20.0787 43.9688 21.1338C43.9688 22.1888 44.8112 23.0312 45.8662 23.0312C46.9213 23.0312 47.7637 22.1888 47.7637 21.1338C47.7637 20.0787 46.9213 19.2363 45.8662 19.2363ZM33.5 20.9375C26.589 20.9375 20.9375 26.589 20.9375 33.5C20.9375 40.411 26.589 46.0625 33.5 46.0625C40.411 46.0625 46.0625 40.411 46.0625 33.5C46.0625 26.589 40.411 20.9375 33.5 20.9375ZM33.5 25.125C38.1537 25.125 41.875 28.8463 41.875 33.5C41.875 38.1537 38.1537 41.875 33.5 41.875C28.8463 41.875 25.125 38.1537 25.125 33.5C25.125 28.8463 28.8463 25.125 33.5 25.125Z" fill="#90B8F8"/>
                             </svg>
@@ -88,7 +90,7 @@
                     </a>
                 </li>
                 <li class="list-items">
-                    <a>
+                    <a href="https://github.com/namanrai" target="_blank">
                         <svg class= "link-icons-alt" viewBox="0 0 24 24" fill="none" stroke="#90B8F8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                             
                     </a>
@@ -116,7 +118,7 @@
         </div>
     </div>
 
-    <div class="aboutpg reveal">
+    <div class="aboutpg reveal" id="about">
         <div class="head1">
             About <span class="color-head">Me</span>
         </div>
@@ -140,7 +142,7 @@
     </div>
 
    
-    <div class="skillpg reveal ">
+    <div class="skillpg reveal "  id="skill">
         <div class="head2">
             <span class="color-head">My</span> Skills
         </div>
@@ -230,7 +232,7 @@
         </div>
     </div>
 
-    <div class="projectpg">
+    <div class="projectpg" id="project">
         <div class="head2 reveal">
             <span class="color-head">My</span> Projects
         </div>
@@ -245,7 +247,7 @@
                 <div class="project-head">Number Guesser + Covid Dashboard</div>
                 <div class="project-link">
                     <div>
-                        <a>
+                        <a href="https://github.com/jeffreyjxang/EECS1022ProjectFabulousCoders" target="_blank">
                             <svg class="project-social-links" viewBox="0 0 24 24" fill="none" stroke="#929292" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                         </a>
                     </div>
@@ -263,7 +265,7 @@
         </div>
 
 
-        <div class="project-section-2 reveal">
+        <div class="project-section-2 reveal" >
             <div>
                 <img src="/assets/project-2.png" class="project-illustration-2"> 
                     
@@ -291,7 +293,7 @@
         </div>
     </div>
 
-    <div class="exppg reveal">
+    <div class="exppg reveal" id="exp">
         <div class="head2 ">
             <span class="color-head">My</span> Experience
         </div>
@@ -377,7 +379,7 @@
     </div>
 
     
-    <div class="contactpg reveal">
+    <div class="contactpg reveal" id="contact">
         <div class="head3">
             Contact <span class="color-head">Me?</span>
         </div>
@@ -389,7 +391,9 @@
             to say hello? 
         </div>
         <div class="contact-button">
-            <span class="btn-contact"><a href="#"></a></span>
+            <span class="btn-contact">
+                <a href="mailto:namanrai306@gmail.com"></a>
+        </span>
         </div>
         <div class="footer">
             Designed and built by Naman Rai

@@ -19,7 +19,16 @@ body{
     overflow-x: hidden !important;
 }
 
+html{
+    scroll-behavior: smooth;
+
+}
+
+
 /*navbar*/
+
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -53,10 +62,13 @@ body{
     display: block;
     font-size: 1rem;
     font-weight: 400;
+  
+   
 }
 
 .navbar-links li a:hover{
     color: var(--hover);
+    
 }
 
 .toggle-button {
@@ -105,6 +117,7 @@ body{
 
     .navbar-links li a {
         padding: 0.5rem 1rem;
+        background-color: #1B1C1D;
     }
 
     .navbar-links.active{
@@ -341,7 +354,7 @@ body{
 
 @media (max-width: 600px) {
     .btn1{
-        font-size: 0.6rem;
+        font-size: 0.5rem;
         margin: 10px;
         height: 5vh;
         width: 20vw;
@@ -733,7 +746,7 @@ li {
     color: var(--white);
     display: flex;
     align-items: center;
-    font-size: 0.8vw;
+    font-size: 1vw;
     justify-content: space-between;
 }
 
@@ -744,7 +757,7 @@ li {
    }
    
    .about-illustration{
-    transform: scale(55%);
+    transform: scale(50%);
    }
 
    .head1{
@@ -756,6 +769,11 @@ li {
     font-size: 1.5vw;
   
    }
+
+   .about-text{
+    font-size: 0.45rem;
+   
+}
    
   }
 
@@ -1182,3 +1200,23 @@ li {
     color: var(--hover);
   }
   
+
+  @media (max-width: 600px){
+
+    .head3,.head1,.head2 {
+        font-size: 4vw;
+      
+    }
+
+    .contact-info{
+       transform: scale(75%);
+    }
+    
+    .btn-contact{
+        transform: scale(80%);
+    }
+
+    .footer{
+        margin-top: 20%;
+    }
+}
