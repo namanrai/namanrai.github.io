@@ -669,11 +669,6 @@ li {
     .left-stuff{
         transform: scale(60%);
     }
-
-    .links-right a{
-        margin-top: -50px;
-       
-    }
   }
 
 .link-icons,.list-items a,.links-2 path,.link-icons-alt:hover{
@@ -711,6 +706,13 @@ li {
     text-decoration-skip-ink: auto;
     position: relative;
     transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+@media (max-width: 600px) {
+    .links-right a{
+        margin-top: -80px;
+
+    }
 }
 
 .links-right a:hover{
