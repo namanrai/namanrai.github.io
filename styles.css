@@ -57,6 +57,11 @@ a:active{
     color: var(--primary);
 }
 
+.main-logo:hover{
+ 
+    color: var(--hover);
+}
+
 .navbar-links ul{
     margin: 0;
     padding: 0;
