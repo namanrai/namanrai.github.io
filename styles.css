@@ -758,7 +758,7 @@ li {
     color: var(--white);
     display: flex;
     align-items: center;
-    font-size: 1vw;
+    font-size: 1.2vw;
     justify-content: space-between;
 }
 
@@ -783,7 +783,7 @@ li {
    }
 
    .about-text{
-    font-size: 0.45rem;
+    font-size: 0.5rem;
    
 }
    
@@ -1231,4 +1231,9 @@ li {
     .footer{
         margin-top: 20%;
     }
+}
+
+
+.color-head2{
+    color: var(--secondary);
 }
