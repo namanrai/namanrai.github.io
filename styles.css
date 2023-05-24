@@ -7,7 +7,7 @@
     --hover: #64FFDA;
     --primary: #5F85DB;
     --secondary: #90B8F8;
-    --bgcolor: #26282B;
+    --bgcolor: #161616;
     --white: #ffffff;
   }
 /*general*/
@@ -35,6 +35,44 @@ a:visited{
 a:active{
     text-decoration: none;
 }
+
+
+/*background hover*/
+@keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1.5;
+    }
+    
+    to {
+      rotate: 360deg;
+    }
+  }
+  
+  #blob {
+    background-color: white;
+    height: 30vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, #515151a0, #96969667);
+    animation: rotate 20s infinite;
+    opacity: 0.8;
+  }
+  
+  #blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(12vmax);
+  }
 
 
 /*navbar*/
@@ -147,26 +185,34 @@ a:active{
 /*landing page*/
  
 .landpg {
-    background: var(--bgcolor);
+    /* background: var(--bgcolor); */
     width: 100vw;
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 1;
+    /* z-index: 1; */
     position: relative;
 }
 
 
 #title1{
-   transform: scale(55%);
-   animation: fill 0.8s ease forwards 5s;
+   /* transform: scale(55%);
+   animation: fill 0.8s ease forwards 5s; */
+
+    color: var(--white);
+    font-size: 3.8vw;
+    font-family: 'Space Mono', monospace;
+    /* font-style: bold; */
+    font-weight: 400;
+    margin-top:-10px;
+    /* animation: fadeIn 1s ease-in both; */
 }
 
 
 /*title animation*/
-#title1 path:nth-child(1){
+/* #title1 path:nth-child(1){
     stroke-dasharray: 256.8px;
     stroke-dashoffset: 256.8px;
     animation: line-anim 1.2s ease forwards;
@@ -305,15 +351,15 @@ a:active{
     to{
         fill: white;
     }
-}
+} */
 
 .title2 {
     color: var(--primary);
-    font-size: 2.8vw;
+    font-size: 3.3vw;
+    font-family: 'Space Mono', monospace;
     font-style: bold;
     font-weight: 700;
     margin-top:-10px;
-    animation: fadeIn 1s ease-in both;
 
 }
 
@@ -773,6 +819,7 @@ li {
     align-items: center;
     font-size: 1.2vw;
     justify-content: space-between;
+    /* gap: 50px; */
 }
 
 
@@ -808,9 +855,9 @@ li {
    
 }
 
-.illus-svg{
+/* .about-illustration{
     transform: scale(80%);
-}
+} */
 
 .head2{
     color: var(--white);

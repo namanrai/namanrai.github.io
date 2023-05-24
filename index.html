@@ -9,14 +9,21 @@
     <script src="main.js" defer></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
+
+    <!-- Background Hover Effect -->
+    <div id="blob"></div>
+    <div id="blur"></div>
+
+
     <!--Landing page-->
 
-    <nav class ="navbar">
+    <div style="z-index: 11"><nav class ="navbar" >
         <div class = "main-logo">NR.</div>
         <a href = "#" class ="toggle-button">
             <span class = "bar"></span>
@@ -33,10 +40,11 @@
             </ul>
         </div>
     </nav>
+    </div>
 
-    <div class="landpg" id="land">
+    <div class="landpg" id="land" style="z-index: 10">
         
-        <svg id  = "title1" viewBox="0 0 969 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- <svg id  = "title1" viewBox="0 0 969 77" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M43.9119 8.89527V57H32.1941V37.1962H13.9664V57H2.24854V8.89527H13.9664V27.7397H32.1941V8.89527H43.9119Z" stroke="white" stroke-width="3"/>
             <path d="M59.6347 14.7884C57.5789 14.7884 55.8886 14.1946 54.5638 13.0068C53.2847 11.7733 52.6451 10.2658 52.6451 8.48412C52.6451 6.65678 53.2847 5.14922 54.5638 3.96145C55.8886 2.72799 57.5789 2.11127 59.6347 2.11127C61.6448 2.11127 63.2894 2.72799 64.5685 3.96145C65.8933 5.14922 66.5557 6.65678 66.5557 8.48412C66.5557 10.2658 65.8933 11.7733 64.5685 13.0068C63.2894 14.1946 61.6448 14.7884 59.6347 14.7884ZM65.4593 18.7629V57H53.7415V18.7629H65.4593Z" stroke="white" stroke-width="3"/>
             <path d="M87.9303 46.173L80.324 65.8398H72.8547L76.8292 46.173H87.9303Z" stroke="white" stroke-width="3"/>
@@ -57,9 +65,10 @@
             <path d="M882.353 37.8129C882.353 33.8841 883.084 30.435 884.545 27.4656C886.053 24.4962 888.086 22.212 890.644 20.6131C893.202 19.0142 896.058 18.2147 899.21 18.2147C901.905 18.2147 904.258 18.7629 906.268 19.8593C908.324 20.9557 909.9 22.3947 910.996 24.1764V18.7629H922.714V57H910.996V51.5865C909.854 53.3682 908.255 54.8072 906.199 55.9036C904.189 57 901.837 57.5482 899.141 57.5482C896.035 57.5482 893.202 56.7487 890.644 55.1498C888.086 53.5052 886.053 51.1982 884.545 48.2288C883.084 45.2137 882.353 41.7417 882.353 37.8129ZM910.996 37.8815C910.996 34.9577 910.174 32.6507 908.529 30.9604C906.93 29.2701 904.966 28.425 902.636 28.425C900.306 28.425 898.319 29.2701 896.674 30.9604C895.076 32.605 894.276 34.8892 894.276 37.8129C894.276 40.7367 895.076 43.0665 896.674 44.8025C898.319 46.4928 900.306 47.3379 902.636 47.3379C904.966 47.3379 906.93 46.4928 908.529 44.8025C910.174 43.1122 910.996 40.8052 910.996 37.8815Z" stroke="white" stroke-width="3"/>
             <path d="M938.455 14.7884C936.399 14.7884 934.709 14.1946 933.384 13.0068C932.105 11.7733 931.465 10.2658 931.465 8.48412C931.465 6.65678 932.105 5.14922 933.384 3.96145C934.709 2.72799 936.399 2.11127 938.455 2.11127C940.465 2.11127 942.11 2.72799 943.389 3.96145C944.714 5.14922 945.376 6.65678 945.376 8.48412C945.376 10.2658 944.714 11.7733 943.389 13.0068C942.11 14.1946 940.465 14.7884 938.455 14.7884ZM944.28 18.7629V57H932.562V18.7629H944.28Z" stroke="white" stroke-width="3"/>
             <path d="M959.624 57.5482C957.568 57.5482 955.878 56.9543 954.553 55.7665C953.274 54.5331 952.634 53.0255 952.634 51.2439C952.634 49.4165 953.274 47.8861 954.553 46.6527C955.878 45.4192 957.568 44.8025 959.624 44.8025C961.634 44.8025 963.279 45.4192 964.558 46.6527C965.883 47.8861 966.545 49.4165 966.545 51.2439C966.545 53.0255 965.883 54.5331 964.558 55.7665C963.279 56.9543 961.634 57.5482 959.624 57.5482Z" stroke="white" stroke-width="3"/>
-            </svg>
-            
-        <div class=" title2" placeholder="in-down">Front-end Developer + Designer</div>
+            </svg> -->
+        
+        <div id= "title1" placeholder="in-down">NAMAN RAI</div>
+        <div class= "title2" placeholder="in-down">Front-end Developer</div>
         
         <div class="button-land">
             <a href = "#project"><button class="btn1">See my work!</button></a>
@@ -118,7 +127,7 @@
         </div>
     </div>
 
-    <div class="aboutpg reveal" id="about">
+    <!-- <div class="aboutpg reveal" id="about">
         <div class="head1">
             About <span class="color-head">Me</span>
         </div>
@@ -138,10 +147,10 @@
             </div>
             <div class="about-illustration">
                 <img src="/assets/about-illus.png" alt="aboutillus"> 
-                    
+              
             </div>
         </div>
-    </div>
+    </div> -->
 
    
     <div class="skillpg reveal "  id="skill">
