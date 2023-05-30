@@ -67,7 +67,7 @@ a:active{
   }
   
   #blur {
-    height: 300%;
+    height: 500%;
     width: 100%;
     position: absolute;
     z-index: 2;
@@ -441,6 +441,9 @@ a:active{
   position: fixed;
 }
 
+.right-stuff:hover{
+  transform: translateY(-3px);
+}
 
 
 .left-stuff{
@@ -556,6 +559,7 @@ li {
   margin-left: -2.5%;
   margin-right: auto;
   width:100%;
+  font-family: 'Space Mono', monospace;
 }
 
 .color-head{
@@ -644,5 +648,130 @@ li {
 
 .list-style-custom{
   margin-top: 8.5vh;
+}
+
+/* Project Section */
+
+#project{
+  z-index: 3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.projects{
+  margin: 5vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-card{
+  width: 60vw;
+  height: 40vh;
+  border: rgba(255, 255, 255, 0.1) solid 1.5px;
+  margin: 2vw;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.project-card:hover{
+  border-color: #7b7b7b;
+  cursor: pointer;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-img{
+  width: 30vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-info{
+  width: 30vw;
+  height: 40vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  padding-top: 2vw; 
+}
+
+.img-style {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+.project-head{
+  color: var(--white);
+  font-size: 1.5vw;
+  font-style: bold;
+  font-weight: 700;
+  margin-left: 0%;
+  margin-right: auto;
+}
+
+.project-text{
+  color: #989898;
+  font-size: 1vw;
+  font-weight: 400;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  margin-left: 0%;
+  margin-right: auto;
+}
+
+.project-tech{
+  color: #989898;
+  font-size: 0.7vw;
+  font-weight: 400;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+
+hr{
+  width: 100%;
+}
+
+.project-social-links{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.project-social-links svg{
+  fill: var(--white);
+  width: 25px;
+}
+
+.project-links{
+  margin-left: 0%;
+  margin-right: auto;
+}
+
+.project-social-links svg:hover{
+  fill: var(--hover);
+}
+
+.project-tech div:hover{
+  color: var(--hover);
 }
 
