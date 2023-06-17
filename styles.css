@@ -676,6 +676,7 @@ li {
   margin: 2vw;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.05);
+  position: relative;
 }
 
 .project-card:hover{
@@ -687,14 +688,16 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: absolute;
 }
 
 .project-img{
-  width: 30vw;
-  height: 40vh;
+  width: 25vw;
+  height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem;
 }
 .project-info{
   width: 30vw;
@@ -775,3 +778,19 @@ hr{
   color: var(--hover);
 }
 
+@media (max-width: 600px) {
+  .card-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-img{
+    height: 15vh;
+  }
+
+  .project-card{
+    height: 50vh;
+  }
+  
+}
