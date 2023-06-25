@@ -67,7 +67,7 @@ a:active{
   }
   
   #blur {
-    height: 500%;
+    height: 700%;
     width: 100%;
     position: absolute;
     z-index: 2;
@@ -776,21 +776,4 @@ hr{
 
 .project-tech div:hover{
   color: var(--hover);
-}
-
-@media (max-width: 600px) {
-  .card-content{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .project-img{
-    height: 15vh;
-  }
-
-  .project-card{
-    height: 50vh;
-  }
-  
 }
