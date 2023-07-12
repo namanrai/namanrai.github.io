@@ -67,13 +67,14 @@ a:active{
   }
   
   #blur {
-    height: 700%;
+    height: 720%;
     width: 100%;
     position: absolute;
     z-index: 2;
     backdrop-filter: blur(12vmax);
   }
 
+ 
 
   /*NAVBAR*/
 
@@ -836,32 +837,113 @@ hr{
 }
 
 
-@media (max-width: 600px){
-    .exp-head{
-        font-size: 0.8rem;
-    }
 
-    .exp-info-list{
-        font-size: 0.6rem;
 
-    }
-    
-    .exp-subhead{
-      font-style: normal;
-      color: #929292;
-      font-size: 0.7rem;
-  }
-  
-    .exp-container{
-      align-items: center;
-      justify-content: center;
-  
-  }
-
-  .exp-container{
-   margin-left: 12%;
-   margin-right: 12%;
-
+/*contact*/
+.contactpg {
+   
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(27, 28, 29, 0.5);
+  margin-top: 100px;
+  bottom:0;
+  z-index: 3;
+  position: fixed;
+ 
 }
 
+
+.head3 {
+  color: var(--white);
+  font-size: 3.5vw;
+  font-style: bold;
+  font-weight: 700;
+  padding-top: 3%;
 }
+
+.contact-info{
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #D3D3D3;
+  text-align: center;
+}
+
+.topgap{
+  margin-top: 40px;
+}
+
+.btn-contact{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  margin-top: 80px;
+  perspective: 1000px;
+}
+.btn-contact a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.btn-contact a:before,
+.btn-contact a:after{
+  position: absolute;
+  content: "GET IN TOUCH";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid var(--primary);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.btn-contact a:before{
+  color: #fff;
+  background: var(--primary);
+  transform: rotateY(0deg) translateZ(25px);
+}
+.btn-contact a:after{
+  color: var(--primary);
+  transform: rotateX(90deg) translateZ(25px);
+}
+.btn-contact a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+
+.footer{
+  font-style: normal;
+  color: #929292;
+  font-size: 0.8rem;
+  margin-top: 3.5%;
+}
+
+.footer:hover{
+  color: var(--hover);
+}
+
+
+
+
+/*scroll animation*/
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+

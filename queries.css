@@ -270,3 +270,67 @@
     color: var(--hover);
   }
 }
+
+
+/*BLOB*/
+@media (max-width: 600px) {
+  #blur {
+    height: 810%;
+  }
+  }
+
+
+  /*Experience*/
+  
+@media (max-width: 600px){
+  .exp-head{
+      font-size: 0.8rem;
+  }
+
+  .exp-info-list{
+      font-size: 0.6rem;
+
+  }
+  
+  .exp-subhead{
+    font-style: normal;
+    color: #929292;
+    font-size: 0.7rem;
+}
+
+  .exp-container{
+    align-items: center;
+    justify-content: center;
+
+}
+
+.exp-container{
+ margin-left: 12%;
+ margin-right: 12%;
+
+}
+
+}
+
+
+
+/*contact*/
+@media (max-width: 600px){
+
+  .head3,.head1,.head2 {
+      font-size: 4vw;
+    
+  }
+
+  .contact-info{
+     transform: scale(75%);
+  }
+  
+  .btn-contact{
+      transform: scale(80%);
+  }
+
+  .footer{
+      margin-top: 20%;
+  }
+}
